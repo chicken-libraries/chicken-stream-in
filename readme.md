@@ -1,4 +1,4 @@
-# 🐓 Chicken package
+# 🐓 Chicken stream input
 
 ## About
 
@@ -22,8 +22,8 @@ directory and include the dependency in your project.
 
 ```console
 [wrap-git]
-directory = chicken
-url = https://github.com/chicken-libraries/chicken.git
+directory = chicken-stream-in
+url = https://github.com/chicken-libraries/chicken-stream-in.git
 revision = main
 ```
 
@@ -31,10 +31,10 @@ revision = main
 The next step should be to add the package to your Meson project:
 
 ```meson
-chicken = subproject('chicken')
+chicken_stream_in = subproject('chicken-stream-in')
 
 executable('prog', files('main.c'),
-    dependencies : [chicken.get_variable('chicken_dep')])
+    dependencies : [chicken_stream_in.get_variable('chicken_stream_in_dep')])
 
 ```
 
