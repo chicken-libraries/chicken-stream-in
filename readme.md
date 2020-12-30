@@ -4,7 +4,8 @@
 
 * * *
 
-Please add relevant information about your package.
+`Chicken Stream Output` package is a lightweight package for handling
+output streams. Gain the ability to manage this safely.
 
 ## Tooling information
 
